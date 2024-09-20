@@ -5,6 +5,7 @@ import Modal from "../../ui/Modal";
 
 function AddCabin() {
   return (
+    <div>
     <Modal>
       <Modal.Open opens="cabin-form">
         <Button>Add new cabin</Button>
@@ -12,6 +13,8 @@ function AddCabin() {
       <Modal.Window name="cabin-form">
         <CreateCabinForm />
       </Modal.Window>
+      </Modal>
+      </div>
 
       {/* <Modal.Open>
         <Button>Show table</Button>
@@ -19,7 +22,7 @@ function AddCabin() {
       <Modal.Window>
         <CreateCabinForm />
       </Modal.Window> */}
-    </Modal>
+   
   );
 }
 
