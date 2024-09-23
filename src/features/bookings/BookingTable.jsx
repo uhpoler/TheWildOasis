@@ -10,9 +10,7 @@ function BookingTable() {
 
   if (isLoading) return <Spinner />;
 
-  console.log(bookings);
-
-  // if (!bookings.length) return <Empty resoursName="bookings" />;
+  if (!bookings.length) return <Empty resoursName="bookings" />;
 
   return (
     <Menus>
