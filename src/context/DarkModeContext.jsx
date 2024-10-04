@@ -40,4 +40,5 @@ function useDarkMode() {
   return context;
 }
 
+/*eslint-disable*/
 export { DarkModeProvider, useDarkMode };

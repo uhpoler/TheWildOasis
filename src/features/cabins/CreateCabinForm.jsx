@@ -30,6 +30,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
       editCabin(
         { newCabinData: { ...data, image }, id: editId },
         {
+          /*eslint-disable*/
           onSuccess: (data) => {
             reset();
             onCloseModal?.();
@@ -40,6 +41,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
       createCabin(
         { ...data, image: image },
         {
+          /*eslint-disable*/
           onSuccess: (data) => {
             reset();
             onCloseModal?.();
@@ -47,7 +49,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         }
       );
   }
-
+  /*eslint-disable*/
   function onError(errors) {
     // console.log(errors);
   }
